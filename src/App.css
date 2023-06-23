@@ -1,6 +1,6 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  text-align: left;
+}
 
 .App-logo {
   height: 40vmin;
@@ -39,4 +39,15 @@
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 0.5rem;
 }

@@ -51,6 +51,12 @@ function Table() {
               ID
             </th>
             <th
+              className="cursor-pointer"
+              style={{
+                backgroundColor:
+                  filters.sorting.sortBy === "product_name" && "green",
+                color: filters.sorting.sortBy === "product_name" && "white",
+              }}
               onClick={() => {
                 dispatch({
                   type: "SORT",
@@ -64,6 +70,12 @@ function Table() {
               Product Name
             </th>
             <th
+              className="cursor-pointer"
+              style={{
+                backgroundColor:
+                  filters.sorting.sortBy === "product_weight" && "green",
+                color: filters.sorting.sortBy === "product_weight" && "white",
+              }}
               onClick={() => {
                 dispatch({
                   type: "SORT",
@@ -77,6 +89,11 @@ function Table() {
               Product Weight
             </th>
             <th
+              className="cursor-pointer"
+              style={{
+                backgroundColor: filters.sorting.sortBy === "price" && "green",
+                color: filters.sorting.sortBy === "price" && "white",
+              }}
               onClick={() => {
                 dispatch({
                   type: "SORT",
@@ -90,6 +107,12 @@ function Table() {
               Price (INR)
             </th>
             <th
+              className="cursor-pointer"
+              style={{
+                backgroundColor:
+                  filters.sorting.sortBy === "calories" && "green",
+                color: filters.sorting.sortBy === "calories" && "white",
+              }}
               onClick={() => {
                 dispatch({
                   type: "SORT",
@@ -103,6 +126,12 @@ function Table() {
               Calories
             </th>
             <th
+              className="cursor-pointer"
+              style={{
+                backgroundColor:
+                  filters.sorting.sortBy === "ingredients" && "green",
+                color: filters.sorting.sortBy === "ingredients" && "white",
+              }}
               onClick={() => {
                 dispatch({
                   type: "SORT",

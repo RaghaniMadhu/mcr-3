@@ -11,9 +11,6 @@ function SnacksContextProvider({ children }) {
       case "SEARCH":
         return { ...filters, searchInput: action.payload };
       case "SORT": {
-        // if(filters.sorting.sortBy === action.payload.sortBy){
-        //   const sortByModified = !filters.sorting.sortBy
-        // }
         return { ...filters, sorting: { ...action.payload } };
       }
       default: {
